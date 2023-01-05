@@ -9,19 +9,23 @@ int main(){
     // printf("cube of the %d is %d", n, n*n*n);
     switch (n)
     {
+    case 15:
+        for(int i = 1; i<=15; i++){
+            printf("%d\n",i*i*i);
+        }
+        break;
+    case 10:
+        for(int i = 1; i<=10; i++){
+            printf("%d\n",i*i*i);
+        }
+        break;
     case 5:
-        printf("%d\n",5*5*5);
-    case 4:
-        printf("%d\n",4*4*4);
-    case 3:
-        printf("%d\n",3*3*3);
-    case 2:
-        printf("%d\n",2*2*2);
-    case 1:
-        printf("%d\n",1*1*1);
+        for(int i = 1; i<=5; i++){
+            printf("%d\n",i*i*i);
+        }
         break;
     default:
-        printf("en");
+        printf("invalid input");
     }
     getch();
     return 0;
