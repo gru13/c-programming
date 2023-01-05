@@ -19,7 +19,7 @@ int main(){
         for(j=0;j<c;j++){
             printf("element B %d%d : ", i,j);
             scanf("%d",&b[i][j]);
-            s[i][j] = a[i][j]+b[i][j];
+            s[i][j] = a[i][j]-b[i][j];
         }
     }
     for(i=0; i<r;i++){
