@@ -9,7 +9,7 @@ int main(){
     printf("enter b  : ");
     scanf("%d",&b);
 
-    printf("enter b  : ");
+    printf("enter x  : ");
     scanf("%d",&x);
     
     printf("(Ax+B)/(Ax-B) -> %f",(float)(a*x+b)/(a*x-b));
