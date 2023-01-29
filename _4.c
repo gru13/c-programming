@@ -1,13 +1,31 @@
-//  even or odd
-#include<stdio.h>
-#include<conio.h>
-int main(){
-    int n;
-    // clrscr();
-    printf("enter number  : ");
-    scanf("%d",&n);
-    if (n%2==0) printf("Yes the number %d is even",n);
-    else printf("No the number %d is odd",n);
-    getch();
+// multiplication table for 9
+// Guruprasath M R
+
+// header files
+#include <stdio.h>
+#include <string.h>
+#include <process.h>
+
+// main function
+
+int main(void)
+{
+    FILE  *f;
+    char c ;
+    char s[100] = "";
+    
+    int n,a  = 9; 
+    //   Opening the source file 
+    f = fopen("multi.txt", "w");
+    // to check file is in file directory 
+    if(f == NULL){
+        printf("Source file doesn't exist");
+        exit(1);
+    }
+
+    for(int i = 1;i <= 10;i++){ 
+        fprintf(f, "%d x %d = %d\n", a, i , a*i);
+    }
+    
     return 0;
 }
